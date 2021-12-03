@@ -1,0 +1,30 @@
+shell $SHELL
+startup_message off
+vbell off
+altscreen on
+
+# keybind
+escape ^Tt
+zombie ^[
+
+# encoding
+defutf8 on
+encoding utf8 utf8
+defencoding utf8
+defkanji utf8
+
+# term
+defbce on
+term xterm-256color
+defscrollback 10000
+termcapinfo xterm* ti@:te@
+
+# status
+shelltitle "$ |bash"
+hardstatus alwayslastline "%{= cd} %-w%{= wk} %n %t* %{-}%+w %= LoadAVG [%l] "
+hardstatus off
+
+# logging
+logfile "$HOME/logs/screen/screen-%Y%m%d-%n.log"
+deflog on
+
