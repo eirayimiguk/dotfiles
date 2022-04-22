@@ -1,11 +1,14 @@
 " Vim-Plug
 call plug#begin('~/.vim/plugged')
 
+" Color scheme
+Plug 'morhetz/gruvbox'
+
+" Common
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'MetalPhaeton/easybracket-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'luochen1990/rainbow'
-Plug 'morhetz/gruvbox'
 
 call plug#end()
 
