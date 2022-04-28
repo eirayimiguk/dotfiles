@@ -2,7 +2,7 @@
 
 DOT_DIR="$HOME/dotfiles"
 
-for dotfile in .vimrc .screenrc
+for dotfile in .vimrc .screenrc .gitconfig
 do
     ln -s $DOT_DIR/$dotfile $HOME/.
 done

@@ -1,0 +1,15 @@
+[user]
+	name  = sistersatori
+	email = sistersatori@gmail.com
+[color]
+    ui = true
+[push]
+	default = simple
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
+[core]
+	autocrlf = false
+	editor = vi
+	quotepath = false
