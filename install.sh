@@ -11,6 +11,10 @@ done
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+# Create backup directory for vim
+mkdir -p ${HOME}/.vimbackup
+chmod 700 ${HOME}/.vimbackup
+
 # Create logs directory for screen
 mkdir -p ${HOME}/logs/screen
 

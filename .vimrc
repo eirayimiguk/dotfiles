@@ -12,8 +12,16 @@ Plug 'luochen1990/rainbow'
 
 call plug#end()
 
-" Keybind
+" Keybind - normal
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Keybind - insert
 inoremap <silent> jj <ESC>
+
+" Keybind - visual
 
 " Common
 set number
@@ -22,6 +30,13 @@ set autoread
 set hidden
 set showmatch
 set cursorline
+
+" Backup
+set backup
+set writebackup
+set directory=$HOME/.vimbackup
+set backupdir=$HOME/.vimbackup
+set undodir=$HOME/.vimbackup
 
 " Indent
 set autoindent
