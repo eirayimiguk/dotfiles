@@ -18,3 +18,7 @@ chmod 700 ${HOME}/.vimbackup
 # Create logs directory for screen
 mkdir -p ${HOME}/logs/screen
 
+# Install starship.rs
+curl -sS https://starship.rs/install.sh | sh
+eval "$(starship init bash)"
+
