@@ -2,6 +2,7 @@
 
 DOT_DIR="$HOME/dotfiles"
 
+# Create link to dotfiles
 for dotfile in .vimrc .screenrc .gitconfig
 do
     ln -s $DOT_DIR/$dotfile $HOME/.
@@ -19,6 +20,13 @@ chmod 700 ${HOME}/.vimbackup
 mkdir -p ${HOME}/logs/screen
 
 # Install starship.rs
-curl -sS https://starship.rs/install.sh | sh
-eval "$(starship init bash)"
+if [ ! -f /usr/local/bin/starship ]; then
+    curl -sS https://starship.rs/install.sh | sh
+    eval "$(starship init bash)"
+fi
+
+# Setup screen
+mkdir -p ${HOME}/.screen && chmod 700 ${HOME}/.screen
+echo 'add the following statement to the .basrhc'
+echo 'export SCREENDIR=${HOME}/.screen'
 
