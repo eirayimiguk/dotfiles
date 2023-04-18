@@ -1,5 +1,5 @@
 [color]
-    ui = true
+	ui = true
 [push]
 	default = simple
 [pull]
@@ -10,3 +10,4 @@
 	autocrlf = false
 	editor = vi
 	quotepath = false
+	excludesfile = ~/.gitignore_global

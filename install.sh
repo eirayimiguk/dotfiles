@@ -3,7 +3,7 @@
 DOT_DIR="$HOME/dotfiles"
 
 # Create link to dotfiles
-for dotfile in .vimrc .screenrc .gitconfig
+for dotfile in .vimrc .screenrc .gitconfig .gitignore_global
 do
     ln -s $DOT_DIR/$dotfile $HOME/.
 done
