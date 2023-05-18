@@ -2,31 +2,52 @@
 
 DOT_DIR="$HOME/dotfiles"
 
-# Create link to dotfiles
-for dotfile in .vimrc .screenrc .gitconfig .gitignore_global
-do
-    ln -s $DOT_DIR/$dotfile $HOME/.
-done
 
-# Install vim-plug
+echo "### Setup - Git ###"
+
+ln -s $DOT_DIR/.gitconfig $HOME/.gitconfig
+
+
+echo "### Setup - Vim / NeoVim ###"
+
+mkdir -p $HOME/.vimbackup
+chmod 700 $HOME/.vimbackup
+
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# Create backup directory for vim
-mkdir -p ${HOME}/.vimbackup
-chmod 700 ${HOME}/.vimbackup
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# Create logs directory for screen
-mkdir -p ${HOME}/logs/screen
 
-# Install starship.rs
-if [ ! -f /usr/local/bin/starship ]; then
-    curl -sS https://starship.rs/install.sh | sh
-    eval "$(starship init bash)"
-fi
+echo "### Setup - Vim ###"
 
-# Setup screen
-mkdir -p ${HOME}/.screen && chmod 700 ${HOME}/.screen
-echo 'add the following statement to the .basrhc'
+# Create directories
+mkdir -p $HOME/.vim/userautoload/init
+mkdir -p $HOME/.vim/userautoload/plugins
+
+ln -s $DOT_DIR/vim/.vimrc $HOME/.vimrc
+ln -s $DOT_DIR/vim/userautoload/init/* $HOME/.vim/userautoload/init/
+ln -s $DOT_DIR/vim/userautoload/plugins/* $HOME/.vim/userautoload/plugins/
+
+
+echo "### Setup - NeoVim ###"
+
+
+# Create directories
+mkdir -p $HOME/.config/nvim
+mkdir -p $HOME/.config/nvim/userautoload/init
+mkdir -p $HOME/.config/nvim/userautoload/plugins
+
+ln -s $DOT_DIR/vim/init.vim $HOME/.config/nvim/init.vim
+ln -s $DOT_DIR/vim/userautoload/init/* $HOME/.config/nvim/userautoload/init/
+ln -s $DOT_DIR/vim/userautoload/plugins/* $HOME/.config/nvim/userautoload/plugins/
+
+
+echo "### Setup - gnu/screen ###"
+
+mkdir -p $HOME/logs/screen
+mkdir -p $HOME/.screen && chmod 700 $HOME/.screen
+
+ln -s $DOT_DIR/.screenrc $HOME/.screenrc
 echo 'export SCREENDIR=${HOME}/.screen'
-
