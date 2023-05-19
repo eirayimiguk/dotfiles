@@ -1,4 +1,4 @@
-colorscheme koehler
 set background=dark
-set t_Co=256
+set termguicolors
+colorscheme deep-space
 
