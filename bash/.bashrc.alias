@@ -1,0 +1,6 @@
+# Common
+alias ls="ls -CF --color=auto"
+alias ll="ls -lFh"
+alias la="ls -al"
+
+alias vim="$HOME/bin/nvim.appimage"
