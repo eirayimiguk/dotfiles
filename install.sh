@@ -51,3 +51,4 @@ mkdir -p $HOME/.screen && chmod 700 $HOME/.screen
 
 ln -s $DOT_DIR/.screenrc $HOME/.screenrc
 echo 'export SCREENDIR=${HOME}/.screen'
+
