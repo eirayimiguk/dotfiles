@@ -1,5 +1,17 @@
 # dotfiles
 
-- setup.sh: 必要なディレクトリの作成や資材のダウンロード
-- link.sh: シンボリックリンクの作成
+## screen
+
+```bash
+export SCREENDIR=${HOME}/.screen
+```
+
+## gitconfig
+
+```bash
+cat ~/.gitconfig.user
+[user]
+    name = username
+    email = user@example.com
+```
 

@@ -25,4 +25,6 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 # GNU/Screen
 mkdir -p $HOME/logs/screen
 mkdir -p $HOME/.screen && chmod 700 $HOME/.screen
-echo 'export SCREENDIR=${HOME}/.screen'
+
+# tmux
+mkdir -p $HOME/logs/tmux
