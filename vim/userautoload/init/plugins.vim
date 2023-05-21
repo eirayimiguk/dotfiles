@@ -13,6 +13,7 @@ Plug 'luochen1990/rainbow'
 
 " Color
 Plug 'tyrannicaltoucan/vim-deep-space', {'do': 'cp colors/* ~/.config/nvim/colors/'}
+Plug 'morhetz/gruvbox', {'do': 'cp colors/* ~/.config/nvim/colors/'}
 
 " LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

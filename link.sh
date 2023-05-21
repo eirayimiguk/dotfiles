@@ -4,9 +4,10 @@ DOT_DIR="$HOME/dotfiles"
 
 
 echo "========================"
-echo "git"
+echo "general settings"
 echo "========================"
 ln -sv $DOT_DIR/.gitconfig $HOME/.gitconfig
+ln -sv $DOT_DIR/.inputrc $HOME/.inputrc
 
 
 echo "========================"
@@ -29,6 +30,12 @@ echo "========================"
 echo "gnu/screen"
 echo "========================"
 ln -sv $DOT_DIR/.screenrc $HOME/.screenrc
+
+
+echo "========================"
+echo "tmux"
+echo "========================"
+ln -sv $DOT_DIR/.tmux.conf $HOME/.tmux.conf
 
 
 echo "========================"
