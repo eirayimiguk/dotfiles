@@ -13,3 +13,5 @@
 	editor = vi
 	quotepath = false
 	excludesfile = ~/.gitignore_global
+[ghq]
+	root = ~/src

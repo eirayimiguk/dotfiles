@@ -43,4 +43,5 @@ echo "bash"
 echo "========================"
 ln -sv $DOT_DIR/bash/.bashrc $HOME/.bashrc
 ln -sv $DOT_DIR/bash/.bashrc.alias $HOME/.bashrc.alias
+ln -sv $DOT_DIR/bash/.bashrc.functions $HOME/.bashrc.functions
 ln -sv $DOT_DIR/bash/starship/starship.toml $HOME/.config/starship.toml

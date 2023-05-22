@@ -15,3 +15,9 @@ cat ~/.gitconfig.user
     email = user@example.com
 ```
 
+## vim
+
+```vim
+:CocInstall coc#util#install()
+:CocInstall coc-clangd
+```

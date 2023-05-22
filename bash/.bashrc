@@ -1,5 +1,6 @@
-source $HOME/.bashrc.local # Credentials
-source $HOME/.bashrc.alias # Alias
+source $HOME/.bashrc.local
+source $HOME/.bashrc.alias
+source $HOME/.bashrc.functions
 
 # rust
 . "$HOME/.cargo/env"
