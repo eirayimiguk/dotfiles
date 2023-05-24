@@ -4,3 +4,5 @@ alias ll="ls -lFh"
 alias la="ls -al"
 
 alias vim="$HOME/bin/nvim.appimage"
+alias obsidian="$HOME/bin/obsidian.appimage &"
+

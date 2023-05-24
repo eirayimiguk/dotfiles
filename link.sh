@@ -9,6 +9,11 @@ echo "========================"
 ln -sv $DOT_DIR/.gitconfig $HOME/.gitconfig
 ln -sv $DOT_DIR/.inputrc $HOME/.inputrc
 
+echo "========================"
+echo "obsidian"
+echo "========================"
+ln -sv $DOT_DIR/obsidian/.obsidian.vimrc $HOME/obsidian/vault/.obsidian.vimrc
+
 
 echo "========================"
 echo "vim"
