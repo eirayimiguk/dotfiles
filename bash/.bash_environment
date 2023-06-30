@@ -2,5 +2,9 @@
 export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin"
 export GOPATH="$HOME/go"
 
+# python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PATH:$PYENV_ROOT/bin"
+
 # screen
 export SCREENDIR=${HOME}/.screen
