@@ -1,8 +1,0 @@
-# Common
-alias ls="ls -CF --color=auto"
-alias ll="ls -lFh"
-alias la="ls -al"
-
-alias vim="$HOME/bin/nvim.appimage"
-alias obsidian="$HOME/bin/obsidian.appimage > /dev/null 2>&1 &"
-

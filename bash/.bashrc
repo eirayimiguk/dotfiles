@@ -1,18 +1,12 @@
-source $HOME/.bashrc.local
-source $HOME/.bashrc.alias
-source $HOME/.bashrc.functions
+# bash
+source "${HOME}/.bash_local"
+source "${HOME}/.bash_alias"
+source "${HOME}/.bash_function"
+source "/etc/bash_completion"
 
-# rust
-. "$HOME/.cargo/env"
+# package manager
+source "$HOME/.cargo/env"
+source "$HOME/.rye/env"
 
-# python
-. "$HOME/.rye/env"
-
-# golang
-export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin"
-export GOPATH="$HOME/go"
-
-# screen
-export SCREENDIR=${HOME}/.screen
-
+# starship.rs
 eval "$(starship init bash)"
