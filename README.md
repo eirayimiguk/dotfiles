@@ -1,12 +1,6 @@
 # dotfiles
 
-## screen
-
-```bash
-export SCREENDIR=${HOME}/.screen
-```
-
-## gitconfig
+- gitconfig
 
 ```bash
 cat ~/.gitconfig.user
@@ -15,9 +9,8 @@ cat ~/.gitconfig.user
     email = user@example.com
 ```
 
-## vim
+- for Windows Subsystem for Linux
 
-```vim
-:CocInstall coc#util#install()
-:CocInstall coc-clangd
+```bash
+export SCREENDIR=${HOME}/.screen
 ```
