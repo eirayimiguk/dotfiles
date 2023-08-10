@@ -1,3 +1,11 @@
+" vim-plug
+" ====================
+call plug#begin()
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()
+
 " Basic configuration
 " ====================
 set fenc=utf-8
@@ -33,6 +41,12 @@ autocmd FileType make setlocal noexpandtab
 " key-bind <Insert Mode>
 " ====================
 inoremap jj <Esc>
+
+" Color
+" ====================
+set t_Co=256
+highlight Pmenu ctermfg=15 ctermbg=4
+highlight PmenuSel ctermfg=0 ctermbg=7
 
 syntax enable
 
