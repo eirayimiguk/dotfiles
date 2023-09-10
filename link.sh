@@ -10,6 +10,7 @@ ln -sv $DOT_DIR/inputrc $HOME/.inputrc
 ln -sv $DOT_DIR/tmux.conf $HOME/.tmux.conf
 ln -sv $DOT_DIR/starship.toml $HOME/.config/starship.toml
 ln -sv $DOT_DIR/vimrc $HOME/.vimrc
+ln -sv $DOT_DIR/ocamlinit $HOME/.ocamlinit
 
 # create local files
 touch $HOME/.gitconfig.user && echo "Please edit the ~/.gitconfig.user"
