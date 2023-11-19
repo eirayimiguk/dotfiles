@@ -17,6 +17,7 @@ set laststatus=2
 set showmatch
 set showmode
 set showcmd
+set signcolumn=yes
 
 " Search
 " ====================
@@ -41,12 +42,16 @@ autocmd FileType make setlocal noexpandtab
 " key-bind <Insert Mode>
 " ====================
 inoremap jj <Esc>
+inoremap <expr> <CR> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Color
 " ====================
 set t_Co=256
 highlight Pmenu ctermfg=15 ctermbg=4
 highlight PmenuSel ctermfg=0 ctermbg=7
+highlight SignColumn ctermbg=8
 
 syntax enable
 

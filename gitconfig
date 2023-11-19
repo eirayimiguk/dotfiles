@@ -13,5 +13,7 @@
 	editor = vi
 	quotepath = false
 	excludesfile = ~/.gitignore_global
+[commit]
+    gpgsign = true
 [ghq]
 	root = ~/src
