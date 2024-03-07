@@ -1,17 +1,10 @@
 # dotfiles
 
-## gitconfig
+I use GNU `stow` to install the configuration.
+
+e.g.
 
 ```bash
-cat ~/.gitconfig.user
-[user]
-    name = username
-    email = user@example.com
-    signingkey = FFFFFFFFFFFFFFFF
+$ stow bash git neovim
 ```
 
-## for Windows Subsystem for Linux
-
-```bash
-export SCREENDIR=${HOME}/.screen
-```

@@ -9,11 +9,12 @@
 [init]
 	defaultBranch = main
 [core]
+	editor = nvim
 	autocrlf = false
-	editor = vi
 	quotepath = false
 	excludesfile = ~/.gitignore_global
-[commit]
-    gpgsign = true
 [ghq]
 	root = ~/src
+[alias]
+    st  = status
+
