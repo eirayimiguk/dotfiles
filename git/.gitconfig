@@ -17,4 +17,5 @@
 	root = ~/src
 [alias]
     st  = status
+    co  = checkout
 
