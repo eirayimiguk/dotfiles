@@ -1,7 +1,3 @@
-require('core.keymaps')
-require('core.plugins')
-require('core.plugin_config')
-
 -- Options
 local opt = vim.opt
 opt.textwidth = 120
@@ -23,4 +19,10 @@ opt.showcmd = true
 -- Color
 opt.termguicolors = true
 opt.background = 'dark'
+
+require('core.keymaps')
+require('core.plugins')
+require('core.plugin_config')
+
+vim.cmd('syntax enable')
 

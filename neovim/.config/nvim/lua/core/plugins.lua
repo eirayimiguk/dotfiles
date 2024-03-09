@@ -13,8 +13,15 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'rstacruz/vim-closer'
   use 'nvim-lualine/lualine.nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
+  use 'norcalli/nvim-colorizer.lua'
+  
+  -- treesitter
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'windwp/nvim-ts-autotag'
+
+  -- telescope
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.5', requires = { {'nvim-lua/plenary.nvim'} }
   }
@@ -25,3 +32,4 @@ return require('packer').startup(function(use)
     require('packer').sync()
   end
 end)
+
