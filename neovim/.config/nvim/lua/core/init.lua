@@ -1,3 +1,10 @@
+local cmd = vim.cmd
+cmd('syntax enable')
+
+local global = vim.g
+global.loaded_netrw = 1
+global.loaded_netrwPlugin = 1
+
 -- Options
 local opt = vim.opt
 opt.textwidth = 120
@@ -23,6 +30,4 @@ opt.background = 'dark'
 require('core.keymaps')
 require('core.plugins')
 require('core.plugin_config')
-
-vim.cmd('syntax enable')
 

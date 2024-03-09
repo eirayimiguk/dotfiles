@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'norcalli/nvim-colorizer.lua'
+  use 'nvim-tree/nvim-tree.lua'
   
   -- treesitter
   use 'nvim-treesitter/nvim-treesitter'
