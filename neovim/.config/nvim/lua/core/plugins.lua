@@ -15,6 +15,9 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'rstacruz/vim-closer'
   use 'nvim-lualine/lualine.nvim'
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.5', requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
