@@ -22,3 +22,7 @@ map('n', '<leader>ff', '<cmd>Telescope find_files<CR>', silent)
 map('n', '<leader>fg', '<cmd>Telescope live_grep<CR>', silent)
 map('n', '<leader>fb', '<cmd>Telescope buffers<CR>', silent)
 map('n', '<leader>fh', '<cmd>Telescope help_tags<CR>', silent)
+
+-- nvim-tree
+map('n', '<leader>ee', '<cmd>NvimTreeFindFileToggle<CR>', silent)
+
