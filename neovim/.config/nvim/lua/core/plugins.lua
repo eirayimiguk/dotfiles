@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
   }
   
   -- treesitter
+  use 'nvim-tree/nvim-tree.lua'
   use 'nvim-treesitter/nvim-treesitter'
   use 'windwp/nvim-ts-autotag'
 
