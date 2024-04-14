@@ -4,6 +4,7 @@ cmd('syntax enable')
 local global = vim.g
 global.loaded_netrw = 1
 global.loaded_netrwPlugin = 1
+global.rustfmt_autosave = 1
 
 -- Options
 local opt = vim.opt
