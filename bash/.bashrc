@@ -8,3 +8,7 @@ alias la="ls -Al"
 
 export PATH="$HOME/bin:$PATH"
 
+# keybase
+# https://github.com/keybase/keybase-issues/issues/2798
+export GPG_TTY=$(tty)
+

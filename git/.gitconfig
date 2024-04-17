@@ -13,6 +13,10 @@
 	autocrlf = false
 	quotepath = false
 	excludesfile = ~/.gitignore_global
+[user]
+  signingkey = A850F1A1869AB16E
+[commit]
+  gpgsign = true
 [ghq]
 	root = ~/src
 [alias]
