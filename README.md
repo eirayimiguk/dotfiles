@@ -8,3 +8,10 @@ e.g.
 $ stow bash git neovim
 ```
 
+## .gitconfig.user
+
+```
+[user]
+   name = <username>
+   email = <email>
+```
