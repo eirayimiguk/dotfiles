@@ -6,6 +6,7 @@ alias ls="ls -CF --color=auto"
 alias ll="ls -lFh"
 alias la="ls -Al"
 
+# Paths
 export PATH="$HOME/bin:$PATH"
 
 # keybase
