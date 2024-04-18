@@ -15,3 +15,10 @@ $ stow bash git neovim
    name = <username>
    email = <email>
 ```
+
+## Import GPG key from Keybase
+
+```bash
+$ keybase pgp export | gpg --import
+$ keybase pgp export --secret | gpg --allow-secret-key --import
+```
